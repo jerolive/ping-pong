@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 2</title>
+	</head>
+	<body>
+		<style>
+			body {
+				background-color: black;
+			}
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+			#game {
+				width: 60%;
+				height: 80%;
+				border: 2px solid white;
+			}
+			.header {
+				display: flex;
+				justify-content: space-between;
+				width: 80%;
+				margin-top: 1em;
+			}
+			h2 {
+				color: white;
+				margin: 0;
+			}
+			.message {
+				display: flex;
+				justify-content: center;
+				width: 80%;
+				margin-top: 1em;
+			}
+			h3 {
+				color: white;
+				margin: 0;
+			}
+			#pscore {
+				color: blue;
+			}
+			#cscore {
+				color: red;
+			}
+		</style>
+		<div class="container">
+			<canvas id="game" height="600" width="800"></canvas>
+			<div class="header">
+				<h2>Player: <span id="pscore">0</span></h2>
+				<h2>CPU: <span id="cscore">0</span></h2>
+			</div>
+			<div class="message">
+				<h3 id="winner">First to </h3>
+			</div>
+		</div>
+		<script src="a2.js"></script>
+	</body>
+</html>
